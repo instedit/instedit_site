@@ -1,0 +1,674 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+  <title>InstEd It! - Help - External Tools</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+  #g_title p, #g_footer p, #g_description p {
+    margin: 0;
+  }
+  /*
+
+  	-- -- -- -- -- -- --
+  	Browser Fixes
+  	-- -- -- -- -- -- --
+  	
+  	This file uses CSS filtering methods to fix various
+  	layout bugs.
+
+  	Each of the following three imported files is a 
+  	separate, browser-specific CSS file that keeps all 
+  	hacks out of the main style sheet.
+  	
+  	Over time, as supporting these browsers no longer
+  	remains a priority, cleaning up the hacks is as
+  	easy as deleting the @import statement below, or
+  	simply no longer linking this file from the HTML.
+  	
+  */
+
+  /* 
+    fix ie6 "peekaboo bug" using the "holly hack". 
+    Note, this style only gets applied to ie6
+  */
+  * html .wrapper {
+    height: 0.1%;
+  }
+
+  /* 
+   * IE5 mac - overrides the IE/Win hack 
+   */
+
+  /*\*//*/
+
+  * html #threecolumn div {
+  	height: auto;
+  }
+
+  /**/
+
+
+  /* 
+   * IE5/Win-specific CSS -ensures #container wraps all content on window resize
+   */
+
+  @media tty {
+   i{content:"\";/*" "*/}} * html #container { height: 1%; } /*";}
+  }/* */
+  /* Styling for editable elements. Eventually, this will be part of the style. */
+  .editable {
+    border: 1px dashed blue;
+  }
+  
+  #footer {
+    clear: both;
+  }
+  
+  /* Extra divs hidden by default. The custom CSS can override this though */
+  #extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+    display: none;
+  }
+  
+  a img,:link img,:visited img {border: none;}
+
+  body {
+    text-align: center;
+  }
+  #container {
+    width: 918px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  #main-content {
+    float: right;
+    width: 670px;
+  }
+  #sidebar {
+    float: right;
+    width: 230px;
+  }
+  #footer {
+    clear: both;
+  }
+  /** BEGIN CUSTOM SKIN **/
+  /*
+
+  	-- -- -- -- -- -- --
+  	Base CSS
+  	-- -- -- -- -- -- --
+  	
+  	This file simply removes default styling on most HTML elements in 
+  	order to reduce the need to later override them.
+  	
+  */
+
+  h1,h2,h3,h4,h5,h6,pre,code,p {font-size: 1em;}
+  dl,li,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin: 0; padding: 0;}
+  a img,:link img,:visited img {border: none;}
+  address {font-style: normal;}/*
+
+  	-- -- -- -- -- -- --
+  	Type Scheme: Deco
+  	-- -- -- -- -- -- --
+  	
+  */
+
+  body {
+  	font: 76% Verdana, sans-serif;
+  }	
+
+  h1, h2, h3, h4, h5, h6, p.description {
+  	font-family: "Trebuchet MS", Trebuchet, sans-serif;
+  }
+  h1 {
+  	font-size: 3em;
+  	font-weight: bold;
+  	letter-spacing: 2px;
+  }
+  h2 {
+  	font-size: 2em;
+  	font-weight: normal;
+  }
+  h3 {
+  	font-size: 1.5em;
+  }
+  h4 {
+  	font-size: 1.2em;
+  	letter-spacing: 0.2em;
+  }
+  h5 {
+  	font-size: 1.2em;
+  }
+  h6 {
+  	font-size: 1em;
+  	font-weight: bold;
+  }
+
+  p, td {
+  	line-height: 1.8em;
+  }
+  code, kbd {
+  	font-size: 1.25em;
+  }/*
+
+  	-- -- -- -- -- -- --
+  	STYLE: Chemise
+  	-- -- -- -- -- -- --
+
+  */
+
+
+
+
+  /* ie6win */
+
+  #footer {
+  	height: 1%;
+  }
+
+  /* ie5mac */
+
+  /*\*//*/
+  #footer { height: auto; }
+  /**/
+
+  /* ie5 win */
+  @media tty {
+   i{content:"\";/*" "*/}} td, * html th { font-size: 0.8em; } h1 { height: 1%; } /*";}
+  }/* */
+
+  /* Basic HTML style
+  ----------------------------------------------- */
+  a:link {
+  	padding: 0 2px;
+  }
+  body {
+  	font: 80% "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  }
+  blockquote {
+          margin: 1em 1em;
+          font-style: italic;
+  }
+  caption {
+  	font-size: 1em;
+  	text-align: left;
+  	padding: 4px 6px;
+  }
+  	font-weight: bold;
+  }
+  dd {
+  	margin: 0 0 1em 1em;
+  }
+  hr {
+  	color: #222;
+  	background: #222;
+  	border-color: #222;
+  }
+  td {
+  	padding: 2px 5px;
+  	vertical-align: top;
+  }
+  th {
+  	font-size: 1em;
+  	padding: 2px 5px;
+  	text-align: left;
+  	border-top: solid 1px #000;
+  	border-right: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  }
+
+  td p {
+  	margin-top: 0;
+  }
+
+  ul li {
+  	margin-bottom: 0.8em;
+  }
+  ol li {
+  	list-style: lower-alpha;
+  	margin-left: 2em;
+  	margin-bottom: 0.8em;
+  }
+
+
+
+
+
+
+
+
+  /* Header
+  ----------------------------------------------- */
+  #container {
+  }
+
+  #header {
+  	border-bottom: solid 1px #000;
+  	position: relative;
+  	margin: 0;
+  	margin-bottom: 10px;
+  }
+  p.description {
+  	font-size: 1em;
+  	margin: 0;
+  	padding: 0.5em 15px;
+  	border-bottom: solid 1px #000;
+  }
+  #g_description {
+  	margin: 1em 0 1em 15px;
+  }
+
+
+  /* Custom font definitions
+  ----------------------------------------------- */
+  p {
+  	margin: 1em 0;
+  	line-height: 1.5;
+  }
+  td, td p {
+  	line-height: 1.5;
+  }
+  h1,h2,h3,h4,h5,h6 {
+  	font-family: "Trebuchet MS", arial, sans-serif;
+  }
+  h1 {
+  	text-align: left;
+  	font-weight: normal;
+  	font-size: 2em;
+  	font-weight: bold;
+  	line-height: 1.5em;
+  	padding: 30px 20px 10px 15px;
+  	margin: 0;
+  	border-top: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  }
+  h2 {
+  	font-size: 1.5em;
+  	color: #000;
+  	margin: 0 0 1em 0;
+  	background: url(/google_images/h2.gif) no-repeat left bottom;
+
+  }
+  h3 {
+  	font-size: 1.2em;
+  	padding: 4px 10px;
+  	margin-top: 0.5em;
+  }
+  h4 {
+  	margin-top: 0.6em;
+  	margin-left: 0.2em;
+  	font-size: 0.9em;
+  }
+  h5 {
+  	padding-left: 10px;
+  	font-size: 1em;
+  }
+  h6 {
+  	font-size: 0.9em;
+  }
+
+  a:link {
+     	color: #f6952e;
+  }
+  a:hover {
+  	background-color: #dbd4a6;
+  }
+
+  /* sidebar
+  ----------------------------------------------- */
+  #sidebar, #sidebar-alternate {
+  	margin-bottom: 2em;
+  }
+  #sidebar h3, #sidebar-alternate h3 {
+  	font-weight: normal;
+  	font-size: 1.3em;
+  	border-top: solid 1px #000;
+  	margin-bottom: 0.5em;
+  }
+  #sidebar h4, #sidebar h5, #sidebar h6,
+  #sidebar-alternate h4, #sidebar-alternate h5, #sidebar-alternate h6,
+  #sidebar p, #sidebar-alternate p {
+  	margin-left: 10px;
+  	margin-right: 20px;
+  }
+
+  #sidebar li, #sidebar-alternate li {
+  	margin-bottom: 0.8em;
+  }
+  #sidebar .links {
+  	margin-bottom: 2em;
+  }
+  #adsense {
+  	text-align: center;
+  }
+
+
+  .editable {
+  	border: dashed 1px #666;
+  }
+
+
+
+  /* layout patches
+  ----------------------------------------------- */
+  #twocolumn-liquid-left #sidebar {
+  	float: left;
+  }
+  #twocolumn-liquid-right #sidebar {
+  	float: right;
+  }
+  #threecolumn #sidebar-alternate {
+  	float: right;
+  }
+
+
+
+  /* Footer
+  ----------------------------------------------- */
+  #footer {
+  	padding: 1px 15px;
+  	border-top: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  	clear: both;
+  }
+  #footer hr {
+  	display: none;
+  }
+
+
+
+  /* fixed 1 column
+  ----------------------------------------------- */
+  #onecolumn #main-content .wrapper {
+  	margin: 20px;
+  }
+
+
+  /* fixed left 2 column
+  ----------------------------------------------- */
+  #twocolumn-left #main-content .wrapper {
+  	padding: 0 20px;
+  }
+
+
+
+  /* fixed right 2 column
+  ----------------------------------------------- */
+  #twocolumn-right #main-content .wrapper {
+  	padding: 0 20px;
+  }
+
+  /* fixed right 3 column
+  ----------------------------------------------- */
+  #threecolumn #main-content .wrapper {
+  	padding: 0 20px;
+  }
+  #threecolumn #sidebar h3, #threecolumn #sidebar-alternate h3 {
+  	margin-bottom: 0;
+  }
+
+  /* liquid left 2 column
+  ----------------------------------------------- */
+  #twocolumn-liquid-left #main-content .wrapper {
+  	margin: 0 20px;
+  }
+
+
+  /* liquid right 2 column
+  ----------------------------------------------- */
+  #twocolumn-liquid-right #main-content .wrapper {
+  	margin: 0 20px;
+  }
+  /*
+
+  	-- -- -- -- -- -- --
+  	COLOR SCHEME: Ember
+  	-- -- -- -- -- -- --
+
+  */
+
+
+  /* Basic HTML style
+  ----------------------------------------------- */
+  body {
+  	color: #323229;
+  	background: #BFBFBF url(/google_images/body-bg-920.png) repeat-y center top;
+  }
+  caption {
+  	color: #fff;
+  	background: #2AA63B url(/google_images/h3.gif) repeat;
+  }
+  code, kbd {
+  	color: #F68A21;
+  }
+  dt {
+  	color: #F68A21;
+  }
+  hr {
+  	background: #604829;
+  	border-color: #604829;
+  	border-top: none;
+  }
+  th {
+  	color: #fff;
+  	background: #F6922E url(/google_images/th.gif) repeat-x 0 0;
+  	border-top: solid 1px #F8A54C;
+  	border-right: solid 1px #F4782D;
+  	border-bottom: solid 1px #F4782D;
+  }
+
+  ul li {
+  	list-style: url(/google_images/h5.gif);
+  }
+
+
+
+
+
+
+  /* Header
+  ----------------------------------------------- */
+  #container {
+  	background: none;
+  }
+
+  #header {
+  	border-bottom: solid 3px #fff;
+  }
+  p.description {
+  	color: #fff;
+  	background: #F68B20 url(/google_images/description.gif) repeat-x 0 0;
+  	border-top: solid 1px #F4782D;
+  	border-bottom: solid 1px #F8A54C;
+  }
+
+
+
+  /* Custom font definitions
+  ----------------------------------------------- */
+  h1 {
+  	color: #fff;
+  	background: #55554C url(/google_images/h1.gif) repeat-x left bottom;
+  	border-top: solid 1px #72726E;
+  	border-bottom: solid 3px #53534A;
+  }
+  h2 {
+  	color: #B4543D;
+  	background: url(/google_images/h2.gif) no-repeat left bottom;
+  }
+  h3 {
+  	color: #fff;
+  	background: #45453B url(/google_images/h3.gif) repeat;
+  }
+  h4 {
+  	color: #B4543D;
+  }
+  h5 {
+  	color: #F68A21;
+  	background: url(/google_images/h5.gif) no-repeat 0 0.5em;
+  }
+
+
+  /* sidebar
+  ----------------------------------------------- */
+  #sidebar, #sidebar-alternate {
+  	background: url(/google_images/sidebar.gif) no-repeat right 0;
+  }
+  #sidebar h3, #sidebar-alternate h3 {
+  	color: #B4543D;
+  	background: none;
+  	border-top: none;
+  }
+
+
+  /* liquid variation
+  ----------------------------------------------- */
+  #twocolumn-liquid-left #container, #twocolumn-liquid-right #container {
+  	background: #F0ECCD url(/google_images/container-liquid-left.gif) repeat-y left top;
+  }
+  #twocolumn-liquid-left #container .wrapper, #twocolumn-liquid-right #container .wrapper {
+  	background: url(/google_images/container-liquid-right.gif) repeat-y right top;
+  }
+  #twocolumn-liquid-left #container .wrapper .wrapper, #twocolumn-liquid-right #container .wrapper .wrapper {
+  	background: none;
+  }
+
+
+  #twocolumn-right #sidebar, #twocolumn-liquid-right #sidebar, #threecolumn #sidebar-alternate {
+  	background: url(/google_images/sidebar.gif) no-repeat left 0;
+  }
+
+
+
+  .editable {
+  	border: dashed 1px #f60;
+  }
+
+
+
+  /* Footer
+  ----------------------------------------------- */
+  #footer {
+  	color: #fff;
+  	background: #55554C url(/google_images/h1.gif) repeat-x left bottom;
+  	border-top: solid 1px #72726E;
+  	border-bottom: solid 3px #53534A;
+  }
+
+  /** END CUSTOM SKIN **/
+  </style>
+
+  <!-- Hack to avoid flash of unstyled content in IE -->
+  <script> </script>
+</head>
+
+<body id="twocolumn-left">
+  <div id="container">
+    <div class="wrapper">
+      <div id="header">
+        <div class="wrapper">
+          <h1 id="page-title"><div id='g_title'><table><tbody><tr><td><a href="home.html"><img tabindex="0" alt="www.instedit.com" src="box-48x48.png"></a></td><td>Help - External Tools</td></tr></tbody></table></div></h1>
+          <div style="clear: both"></div>
+          <p class="description"><div id='g_description'>  
+<script language="JavaScript">
+<!--
+function correctPNG() // correctly handle PNG transparency in Win IE 5.5 & 6.
+{
+ var arVersion = navigator.appVersion.split("MSIE")
+ var version = parseFloat(arVersion[1])
+ if ((version >= 5.5) && (version < 7.0) && (document.body.filters)) 
+ {
+ for(var i=0; i<document.images.length; i++)
+ {
+ var img = document.images[i]
+ var imgName = img.src.toUpperCase()
+ if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+ {
+ var imgID = (img.id) ? "id='" + img.id + "' " : ""
+ var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+ var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+ var imgStyle = "display:inline-block;" + img.style.cssText 
+ if (img.align == "left") imgStyle = "float:left;" + imgStyle
+ if (img.align == "right") imgStyle = "float:right;" + imgStyle
+ if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+ var strNewHTML = "<span " + imgID + imgClass + imgTitle
+ + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+ + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+ + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>" 
+ img.outerHTML = strNewHTML
+ i = i-1
+ }
+ }
+ } 
+}
+window.attachEvent("onload", correctPNG);
+//-->
+</script></div></p>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <!-- /wrapper --><!-- /header -->
+      <div id="main-content">
+        <div class="wrapper">
+          <div class="content-item"><div id='g_body'><p>InstEd provides an easy way to call other programs or scripts from within the InstEd application.</p><p>Under the <i>Tools </i>menu option, the <i>External Tools...</i> option allows configuration of the commands to launch the external tools. Each external tool added will subsequently be listed in the <i>Tools </i>menu as a separate menu option.</p><p><br>The components of an External Tool command are:</p><ul><li>Name: The display name that should appear in the meu option. You can use &quot;&amp;&quot; in the name to designate the menu shortcut key. For example, &quot;&amp;Install current file&quot; will be selectable from ALT+O (<i>Tools</i>) followed by ALT+I.<br></li><li>Cmd Prefix: This is the first part of the command line that will be used to launch the tool. In simple cases this will be the entire command line. In complex cases this will be prefixed to the active file&#39;s path or the suffix e.g. msiexec /i</li><li>Include current file in command: If this is selected, then the path to the active file (open and showing in InstEd) will be added to the command line after the prefix.</li><li>Surround file with quotes: If the active file&#39;s path is to be included in the command line, then it will be surrounded with quotes if this option is selected.</li><li>Cmd Suffix: This will be appended to the other elements of the command line. e.g. /l* &quot;c:\temp\msi log.txt&quot;</li></ul><p>The example options above will result in a command line of:<br>msiexec /i &quot;&lt;path to current file&gt;&quot; /l* &quot;c:\temp\msi log.txt&quot;</p><p><b>Version 1.5.3.4 and later</b> </p><p>Environment variables will be expanded.<br></p><h3>Pass transforms as msi</h3><p>If this option is checked, and the active file is a transform, InstEd will include in the command line a path that points to a temporary file location. This file will be an msi consisting of the base msi with all changes in the transform chain applied, equivalent to performing &quot;Save Transformed&quot;.</p><p>This path will be in place of the active file&#39;s path in the command line.</p><p>This means that the external tool will operate on a msi that represents the active file, regardless of whether the active file is a transform or an msi.</p><p>When the external tool closes, the temporary msi will be compared against the base msi, and any changes that the external tool made will be incorporated into the transform file that was active before the external tool was launched.</p><p>Using the example command above, this allows msiexec to install the msi that represents the transformed msi.</p><p>Where this option becomes very useful is for tools or scripts that work only on msi&#39;s. For example, a packaging team may have a script that performs custom cleanup, however the script only works on msi files, and not transforms.</p><p>The &quot;Pass transforms as msi&quot; option allows InstEd to call that script with the transformed msi, and incorporate any changes into the original transform.</p><p>This provides &quot;automatic transform support&quot; for external tools or scripts.</p><p>Note that the temporary msi file will not be in the root of the external source tree, so tools that require the external source tree may not work correctly.<br></p></div></div>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <!-- /wrapper --><!-- /main-content -->
+        <div id="sidebar">
+            <div class="wrapper">
+                <div class="links">
+                    <div class="wrapper">
+                        <div id='g_sidebar'>
+                            <ul>
+                                <li><a href="home.html">Home</a></li><li><a href="onlinehelp.html">Online Help </a>
+                                </li>
+                            </ul>
+                            <br />
+<!--                            <form target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="7JB6BLDYZCYG8">
+                            <input type="image" src="https://www.paypal.com/en_AU/i/btn/btn_donateCC_LG.gif"
+                                border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
+                            <img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1"
+                                height="1">
+                            </form>-->
+                        </div>
+                    </div>
+                    <div style="clear: both">
+                    </div>
+                </div>
+                <!-- /wrapper -->
+                <!-- /links -->
+            </div>
+        </div>
+      <!-- /wrapper --><!-- /sidebar -->
+      <div id="footer"><div class="wrapper">
+        <hr />
+        <p><div id='g_footer'>Copyright © 2017 instedit.com (TNE Enterprises)
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3527632-1");
+pageTracker._initData();
+pageTracker._setDomainName("none");
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+</script></div></p>
+        <div style="clear: both"></div>
+      </div></div>
+      <!-- /wrapper --><!-- /footer -->
+    </div>
+  </div>
+  <!-- /wrapper --><!-- /container -->
+
+<div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div>
+<div id="extraDiv3"><span></span></div><div id="extraDiv4"><span></span></div>
+<div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
+
+</body>
+</html>

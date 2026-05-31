@@ -1,0 +1,1037 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+  <title>InstEd It! - Thankyou!</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+  #g_title p, #g_footer p, #g_description p {
+    margin: 0;
+  }
+  /*
+
+  	-- -- -- -- -- -- --
+  	Browser Fixes
+  	-- -- -- -- -- -- --
+  	
+  	This file uses CSS filtering methods to fix various
+  	layout bugs.
+
+  	Each of the following three imported files is a 
+  	separate, browser-specific CSS file that keeps all 
+  	hacks out of the main style sheet.
+  	
+  	Over time, as supporting these browsers no longer
+  	remains a priority, cleaning up the hacks is as
+  	easy as deleting the @import statement below, or
+  	simply no longer linking this file from the HTML.
+  	
+  */
+
+  /* 
+    fix ie6 "peekaboo bug" using the "holly hack". 
+    Note, this style only gets applied to ie6
+  */
+  * html .wrapper {
+    height: 0.1%;
+  }
+
+  /* 
+   * IE5 mac - overrides the IE/Win hack 
+   */
+
+  /*\*//*/
+
+  * html #threecolumn div {
+  	height: auto;
+  }
+
+  /**/
+
+
+  /* 
+   * IE5/Win-specific CSS -ensures #container wraps all content on window resize
+   */
+
+  @media tty {
+   i{content:"\";/*" "*/}} * html #container { height: 1%; } /*";}
+  }/* */
+  /* Styling for editable elements. Eventually, this will be part of the style. */
+  .editable {
+    border: 1px dashed blue;
+  }
+  
+  #footer {
+    clear: both;
+  }
+  
+  /* Extra divs hidden by default. The custom CSS can override this though */
+  #extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+    display: none;
+  }
+  
+  a img,:link img,:visited img {border: none;}
+
+  body {
+    text-align: center;
+  }
+  #container {
+    width: 918px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  #main-content {
+    float: right;
+    width: 670px;
+  }
+  #sidebar {
+    float: right;
+    width: 230px;
+  }
+  #footer {
+    clear: both;
+  }
+  /** BEGIN CUSTOM SKIN **/
+  /*
+
+  	-- -- -- -- -- -- --
+  	Base CSS
+  	-- -- -- -- -- -- --
+  	
+  	This file simply removes default styling on most HTML elements in 
+  	order to reduce the need to later override them.
+  	
+  */
+
+  h1,h2,h3,h4,h5,h6,pre,code,p {font-size: 1em;}
+  dl,li,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin: 0; padding: 0;}
+  a img,:link img,:visited img {border: none;}
+  address {font-style: normal;}/*
+
+  	-- -- -- -- -- -- --
+  	Type Scheme: Deco
+  	-- -- -- -- -- -- --
+  	
+  */
+
+  body {
+  	font: 76% Verdana, sans-serif;
+  }	
+
+  h1, h2, h3, h4, h5, h6, p.description {
+  	font-family: "Trebuchet MS", Trebuchet, sans-serif;
+  }
+  h1 {
+  	font-size: 3em;
+  	font-weight: bold;
+  	letter-spacing: 2px;
+  }
+  h2 {
+  	font-size: 2em;
+  	font-weight: normal;
+  }
+  h3 {
+  	font-size: 1.5em;
+  }
+  h4 {
+  	font-size: 1.2em;
+  	letter-spacing: 0.2em;
+  }
+  h5 {
+  	font-size: 1.2em;
+  }
+  h6 {
+  	font-size: 1em;
+  	font-weight: bold;
+  }
+
+  p, td {
+  	line-height: 1.8em;
+  }
+  code, kbd {
+  	font-size: 1.25em;
+  }/*
+
+  	-- -- -- -- -- -- --
+  	STYLE: Chemise
+  	-- -- -- -- -- -- --
+
+  */
+
+
+
+
+  /* ie6win */
+
+  #footer {
+  	height: 1%;
+  }
+
+  /* ie5mac */
+
+  /*\*//*/
+  #footer { height: auto; }
+  /**/
+
+  /* ie5 win */
+  @media tty {
+   i{content:"\";/*" "*/}} td, * html th { font-size: 0.8em; } h1 { height: 1%; } /*";}
+  }/* */
+
+  /* Basic HTML style
+  ----------------------------------------------- */
+  a:link {
+  	padding: 0 2px;
+  }
+  body {
+  	font: 80% "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  }
+  blockquote {
+          margin: 1em 1em;
+          font-style: italic;
+  }
+  caption {
+  	font-size: 1em;
+  	text-align: left;
+  	padding: 4px 6px;
+  }
+  	font-weight: bold;
+  }
+  dd {
+  	margin: 0 0 1em 1em;
+  }
+  hr {
+  	color: #222;
+  	background: #222;
+  	border-color: #222;
+  }
+  td {
+  	padding: 2px 5px;
+  	vertical-align: top;
+  }
+  th {
+  	font-size: 1em;
+  	padding: 2px 5px;
+  	text-align: left;
+  	border-top: solid 1px #000;
+  	border-right: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  }
+
+  td p {
+  	margin-top: 0;
+  }
+
+  ul li {
+  	margin-bottom: 0.8em;
+  }
+  ol li {
+  	list-style: lower-alpha;
+  	margin-left: 2em;
+  	margin-bottom: 0.8em;
+  }
+
+
+
+
+
+
+
+
+  /* Header
+  ----------------------------------------------- */
+  #container {
+  }
+
+  #header {
+  	border-bottom: solid 1px #000;
+  	position: relative;
+  	margin: 0;
+  	margin-bottom: 10px;
+  }
+  p.description {
+  	font-size: 1em;
+  	margin: 0;
+  	padding: 0.5em 15px;
+  	border-bottom: solid 1px #000;
+  }
+  #g_description {
+  	margin: 1em 0 1em 15px;
+  }
+
+
+  /* Custom font definitions
+  ----------------------------------------------- */
+  p {
+  	margin: 1em 0;
+  	line-height: 1.5;
+  }
+  td, td p {
+  	line-height: 1.5;
+  }
+  h1,h2,h3,h4,h5,h6 {
+  	font-family: "Trebuchet MS", arial, sans-serif;
+  }
+  h1 {
+  	text-align: left;
+  	font-weight: normal;
+  	font-size: 2em;
+  	font-weight: bold;
+  	line-height: 1.5em;
+  	padding: 30px 20px 10px 15px;
+  	margin: 0;
+  	border-top: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  }
+  h2 {
+  	font-size: 1.5em;
+  	color: #000;
+  	margin: 0 0 1em 0;
+  	background: url(/google_images/h2.gif) no-repeat left bottom;
+
+  }
+  h3 {
+  	font-size: 1.2em;
+  	padding: 4px 10px;
+  	margin-top: 0.5em;
+  }
+  h4 {
+  	margin-top: 0.6em;
+  	margin-left: 0.2em;
+  	font-size: 0.9em;
+  }
+  h5 {
+  	padding-left: 10px;
+  	font-size: 1em;
+  }
+  h6 {
+  	font-size: 0.9em;
+  }
+
+  a:link {
+     	color: #f6952e;
+  }
+  a:hover {
+  	background-color: #dbd4a6;
+  }
+
+  /* sidebar
+  ----------------------------------------------- */
+  #sidebar, #sidebar-alternate {
+  	margin-bottom: 2em;
+  }
+  #sidebar h3, #sidebar-alternate h3 {
+  	font-weight: normal;
+  	font-size: 1.3em;
+  	border-top: solid 1px #000;
+  	margin-bottom: 0.5em;
+  }
+  #sidebar h4, #sidebar h5, #sidebar h6,
+  #sidebar-alternate h4, #sidebar-alternate h5, #sidebar-alternate h6,
+  #sidebar p, #sidebar-alternate p {
+  	margin-left: 10px;
+  	margin-right: 20px;
+  }
+
+  #sidebar li, #sidebar-alternate li {
+  	margin-bottom: 0.8em;
+  }
+  #sidebar .links {
+  	margin-bottom: 2em;
+  }
+  #adsense {
+  	text-align: center;
+  }
+
+
+  .editable {
+  	border: dashed 1px #666;
+  }
+
+
+
+  /* layout patches
+  ----------------------------------------------- */
+  #twocolumn-liquid-left #sidebar {
+  	float: left;
+  }
+  #twocolumn-liquid-right #sidebar {
+  	float: right;
+  }
+  #threecolumn #sidebar-alternate {
+  	float: right;
+  }
+
+
+
+  /* Footer
+  ----------------------------------------------- */
+  #footer {
+  	padding: 1px 15px;
+  	border-top: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  	clear: both;
+  }
+  #footer hr {
+  	display: none;
+  }
+
+
+
+  /* fixed 1 column
+  ----------------------------------------------- */
+  #onecolumn #main-content .wrapper {
+  	margin: 20px;
+  }
+
+
+  /* fixed left 2 column
+  ----------------------------------------------- */
+  #twocolumn-left #main-content .wrapper {
+  	padding: 0 20px;
+  }
+
+
+
+  /* fixed right 2 column
+  ----------------------------------------------- */
+  #twocolumn-right #main-content .wrapper {
+  	padding: 0 20px;
+  }
+
+  /* fixed right 3 column
+  ----------------------------------------------- */
+  #threecolumn #main-content .wrapper {
+  	padding: 0 20px;
+  }
+  #threecolumn #sidebar h3, #threecolumn #sidebar-alternate h3 {
+  	margin-bottom: 0;
+  }
+
+  /* liquid left 2 column
+  ----------------------------------------------- */
+  #twocolumn-liquid-left #main-content .wrapper {
+  	margin: 0 20px;
+  }
+
+
+  /* liquid right 2 column
+  ----------------------------------------------- */
+  #twocolumn-liquid-right #main-content .wrapper {
+  	margin: 0 20px;
+  }
+  /*
+
+  	-- -- -- -- -- -- --
+  	COLOR SCHEME: Ember
+  	-- -- -- -- -- -- --
+
+  */
+
+
+  /* Basic HTML style
+  ----------------------------------------------- */
+  body {
+  	color: #323229;
+  	background: #BFBFBF url(/google_images/body-bg-920.png) repeat-y center top;
+  }
+  caption {
+  	color: #fff;
+  	background: #2AA63B url(/google_images/h3.gif) repeat;
+  }
+  code, kbd {
+  	color: #F68A21;
+  }
+  dt {
+  	color: #F68A21;
+  }
+  hr {
+  	background: #604829;
+  	border-color: #604829;
+  	border-top: none;
+  }
+  th {
+  	color: #fff;
+  	background: #F6922E url(/google_images/th.gif) repeat-x 0 0;
+  	border-top: solid 1px #F8A54C;
+  	border-right: solid 1px #F4782D;
+  	border-bottom: solid 1px #F4782D;
+  }
+
+  ul li {
+  	list-style: url(/google_images/h5.gif);
+  }
+
+
+
+
+
+
+  /* Header
+  ----------------------------------------------- */
+  #container {
+  	background: none;
+  }
+
+  #header {
+  	border-bottom: solid 3px #fff;
+  }
+  p.description {
+  	color: #fff;
+  	background: #F68B20 url(/google_images/description.gif) repeat-x 0 0;
+  	border-top: solid 1px #F4782D;
+  	border-bottom: solid 1px #F8A54C;
+  }
+
+
+
+  /* Custom font definitions
+  ----------------------------------------------- */
+  h1 {
+  	color: #fff;
+  	background: #55554C url(/google_images/h1.gif) repeat-x left bottom;
+  	border-top: solid 1px #72726E;
+  	border-bottom: solid 3px #53534A;
+  }
+  h2 {
+  	color: #B4543D;
+  	background: url(/google_images/h2.gif) no-repeat left bottom;
+  }
+  h3 {
+  	color: #fff;
+  	background: #45453B url(/google_images/h3.gif) repeat;
+  }
+  h4 {
+  	color: #B4543D;
+  }
+  h5 {
+  	color: #F68A21;
+  	background: url(/google_images/h5.gif) no-repeat 0 0.5em;
+  }
+
+
+  /* sidebar
+  ----------------------------------------------- */
+  #sidebar, #sidebar-alternate {
+  	background: url(/google_images/sidebar.gif) no-repeat right 0;
+  }
+  #sidebar h3, #sidebar-alternate h3 {
+  	color: #B4543D;
+  	background: none;
+  	border-top: none;
+  }
+
+
+  /* liquid variation
+  ----------------------------------------------- */
+  #twocolumn-liquid-left #container, #twocolumn-liquid-right #container {
+  	background: #F0ECCD url(/google_images/container-liquid-left.gif) repeat-y left top;
+  }
+  #twocolumn-liquid-left #container .wrapper, #twocolumn-liquid-right #container .wrapper {
+  	background: url(/google_images/container-liquid-right.gif) repeat-y right top;
+  }
+  #twocolumn-liquid-left #container .wrapper .wrapper, #twocolumn-liquid-right #container .wrapper .wrapper {
+  	background: none;
+  }
+
+
+  #twocolumn-right #sidebar, #twocolumn-liquid-right #sidebar, #threecolumn #sidebar-alternate {
+  	background: url(/google_images/sidebar.gif) no-repeat left 0;
+  }
+
+
+
+  .editable {
+  	border: dashed 1px #f60;
+  }
+
+
+
+  /* Footer
+  ----------------------------------------------- */
+  #footer {
+  	color: #fff;
+  	background: #55554C url(/google_images/h1.gif) repeat-x left bottom;
+  	border-top: solid 1px #72726E;
+  	border-bottom: solid 3px #53534A;
+  }
+
+  /** END CUSTOM SKIN **/
+  </style>
+
+  <!-- Hack to avoid flash of unstyled content in IE -->
+  <script> </script>
+
+<script type="text/javascript">
+<!--
+
+function onload_handler()
+{
+ var re = /file=([^=&]*)/i;
+ var file = re.exec( window.location.search );
+
+ if( file != null ) {
+
+     if (file[1] == "InstEd-1.5.7.15.msi")
+         window.location="http://apps.instedit.com/releases2/InstEd-1.5.7.15.msi";
+     else if (file[1] == "InstEd-1.5.5.13.msi")
+         window.location = "http://apps.instedit.com/releases2/InstEd-1.5.5.13.msi";
+     else if (file[1] == "InstEd-1.5.6.14.msi")
+         window.location="http://apps.instedit.com/releases2/InstEd-1.5.6.14.msi";
+     else if (file[1] == "InstEd-1.5.8.16.msi")
+         window.location="http://apps.instedit.com/releases2/InstEd-1.5.8.16.msi";
+     else if (file[1] == "InstEd-1.5.9.17.msi")
+         window.location = "http://apps.instedit.com/releases2/InstEd-1.5.9.17.msi";
+     else if (file[1] == "InstEd-1.5.10.18.msi")
+         window.location = "http://apps.instedit.com/releases2/InstEd-1.5.10.18.msi";
+     else if (file[1] == "InstEd-1.5.11.19.msi")
+         window.location = "http://apps.instedit.com/releases2/InstEd-1.5.11.19.msi";
+     else if (file[1] == "InstEd-1.5.12.21.msi")
+         window.location = "http://apps.instedit.com/releases2/InstEd-1.5.12.21.msi";
+     else if (file[1] == "InstEd-1.5.13.24.msi")
+         window.location = "http://apps.instedit.com/releases2/InstEd-1.5.13.24.msi";
+     else if (file[1] == "InstEd-1.5.14.25.msi")
+         window.location = "http://apps.instedit.com/releases2/InstEd-1.5.14.25.msi";
+     else if (file[1] == "InstEd-1.5.15.26.msi")
+         window.location = "http://apps.instedit.com/releases2/InstEd-1.5.15.26.msi";
+     //else
+         //window.location="/apps.instedit.com/releases2/" + file[1];
+ }
+}
+//-->
+</script>
+</head>
+
+<body id="twocolumn-left" onload="onload_handler()">
+  <div id="container">
+    <div class="wrapper">
+      <div id="header">
+        <div class="wrapper">
+          <h1 id="page-title"><div id='g_title'><table><tbody><tr><td><a href="home.html"><img tabindex="0" alt="www.instedit.com" src="box-48x48.png"></a></td><td>Thankyou!</td></tr></tbody></table></div></h1>
+          <div style="clear: both"></div>
+          <p class="description"><div id='g_description'> 
+<script language="JavaScript">
+<!--
+function correctPNG() // correctly handle PNG transparency in Win IE 5.5 & 6.
+{
+ var arVersion = navigator.appVersion.split("MSIE")
+ var version = parseFloat(arVersion[1])
+ if ((version >= 5.5) && (version < 7.0) && (document.body.filters)) 
+ {
+ for(var i=0; i<document.images.length; i++)
+ {
+ var img = document.images[i]
+ var imgName = img.src.toUpperCase()
+ if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+ {
+ var imgID = (img.id) ? "id='" + img.id + "' " : ""
+ var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+ var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+ var imgStyle = "display:inline-block;" + img.style.cssText 
+ if (img.align == "left") imgStyle = "float:left;" + imgStyle
+ if (img.align == "right") imgStyle = "float:right;" + imgStyle
+ if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+ var strNewHTML = "<span " + imgID + imgClass + imgTitle
+ + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+ + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+ + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>" 
+ img.outerHTML = strNewHTML
+ i = i-1
+ }
+ }
+ } 
+}
+window.attachEvent("onload", correctPNG);
+//-->
+</script>
+ </div></p>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <!-- /wrapper --><!-- /header -->
+      <div id="main-content">
+          <div class="wrapper">
+              <div class="content-item">
+                  <div id='g_body'>
+                      <h2>
+                          Thankyou for downloading InstEd.
+                          <br />
+                          <br />
+                          Please check out <a href="instedplus.html">InstEd Plus</a>, a plugin to make your work
+                          easier.<br /><span style="color:Red">Includes 30 day free trial period.</span><br />
+                      </h2>
+                      <a href="features2.html">Release Notes</a><p>
+                          Your download should start soon. If not, please click one of the links below.
+                          <br />
+                      </p>
+                      <p>
+                          Microsoft provides a command line utility to check hashes on files <a href="http://support.microsoft.com/kb/841290">
+                              here</a>.<br />
+                      </p>
+                      <h3>
+                          InstEd 1.5.15.26<br />
+                      </h3>
+                      <p>
+                          <b>Note: This version is incompatible</b> <b>with InstEd Plus versions earlier than
+                              1.1.9.10.</b> If you install this version, the InstEd Plus menu options will
+                          not work until you upgrade to at least <a href="instedplus-download.html">InstEd Plus
+                              1.1.9.10</a> (the upgrade is free).<br />
+                      </p>
+                      <p>
+                          <a href="http://apps.instedit.com/releases2/InstEd-1.5.15.26.msi" onclick="javascript: pageTracker._trackPageview(&#39;/downloads/insted_1_5_15_26_from_thankyou&#39;);">
+                              Download InstEd 1.5.15.26</a> - Released Apr 30, 2012</p>
+                      <table>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      MD5
+                                  </td>
+                                  <td>
+                                      fe2431ceecfabee0ef87b54a122f6e82
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      SHA1
+                                  </td>
+                                  <td>
+                                      e9893ddde47216bf812f8a6ba0ff607204dbcba2
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <p>
+                          <br />
+                      </p>
+                      <!--                <h3>
+                    InstEd 1.5.14.25<br />
+                </h3>
+                <p>
+                <b>Note: This version is incompatible</b> <b>with InstEd Plus versions earlier than
+                        1.1.8.9.</b> If you install this version, the InstEd Plus menu options will
+                    not work until you upgrade to at least <a href="instedplus-download.html">InstEd Plus
+                        1.1.8.9</a> (the upgrade is free).<br />
+                </p>
+                <p>
+                    <a href="http://apps.instedit.com/releases2/InstEd-1.5.14.25.msi" onclick="javascript: pageTracker._trackPageview(&#39;/downloads/insted_1_5_14_25_from_thankyou&#39;);">
+                        Download InstEd 1.5.14.25</a> - Released Apr 20, 2012</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                MD5
+                            </td>
+                            <td>
+                                c4944dd83f4ee22ab130a8ffbf95a7c0
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                SHA1
+                            </td>
+                            <td>
+                                95092412ecba9b21bc82149da736126280689ae3
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <br />
+                </p>
+-->                      <h3>
+                          InstEd 1.5.13.24<br />
+                      </h3>
+                      <p>
+                          <b>Note: This version is incompatible</b> <b>with InstEd Plus versions earlier than
+                              1.1.7.8.</b> If you install this version, the InstEd Plus menu options will
+                          not work until you upgrade to at least <a href="instedplus-download.html">InstEd Plus
+                              1.1.7.8</a> (the upgrade is free).<br />
+                      </p>
+                      <p>
+                          <a href="http://apps.instedit.com/releases2/InstEd-1.5.13.24.msi" onclick="javascript: pageTracker._trackPageview(&#39;/downloads/insted_1_5_13_24_from_thankyou&#39;);">
+                              Download InstEd 1.5.13.24</a> - Released Sep 28, 2011</p>
+                      <table>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      MD5
+                                  </td>
+                                  <td>
+                                      c9f91666ff68a05b193cbce971e0f251
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      SHA1
+                                  </td>
+                                  <td>
+                                      20a81f62142e6437c1feb53af51171b47247ff8d
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <p>
+                          <br />
+                      </p>
+                      <h3>
+                          InstEd 1.5.12.21<br />
+                      </h3>
+                      <p>
+                          <b>Note: This version is incompatible</b> <b>with InstEd Plus versions earlier than
+                              1.1.6.7.</b> If you install this version, the InstEd Plus menu options will
+                          not work until you upgrade to at least <a href="instedplus-download.html">InstEd Plus
+                              1.1.6.7</a> (the upgrade is free).<br />
+                      </p>
+                      <p>
+                          <a href="http://apps.instedit.com/releases2/InstEd-1.5.12.21.msi" onclick="javascript: pageTracker._trackPageview(&#39;/downloads/insted_1_5_12_21_from_thankyou&#39;);">
+                              Download InstEd 1.5.12.21</a> - Released Apr 27, 2010</p>
+                      <table>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      MD5
+                                  </td>
+                                  <td>
+                                      9a1e94bf797dc1663428cb3285d8a713
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      SHA1
+                                  </td>
+                                  <td>
+                                      a68e596615814adb6d7b107340744eb32e305b15
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <p>
+                          <br />
+                      </p>
+                      <h3>
+                          InstEd 1.5.8.16<br />
+                      </h3>
+                      <p>
+                          <a href="http://apps.instedit.com/releases2/InstEd-1.5.8.16.msi" onclick="javascript: pageTracker._trackPageview(&#39;/downloads/insted_1_5_8_16_apps_from_thankyou&#39;);">
+                              Download InstEd 1.5.8.16</a> - Released Mar 24, 2009</p>
+                      <table>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      MD5
+                                  </td>
+                                  <td>
+                                      10697ac1acaf974b964d6b9e35f08b77 
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      SHA1
+                                  </td>
+                                  <td>
+                                      3c1283f9fb81e65350a4f9e85a2b4083b61098ba
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <h3>
+                          InstEd 1.5.7.15<br />
+                      </h3>
+                      <p>
+                          <a href="http://apps.instedit.com/releases2/InstEd-1.5.7.15.msi" onclick="javascript: pageTracker._trackPageview(&#39;/downloads/insted_1_5_7_15_apps_from_thankyou&#39;);">
+                              Download InstEd 1.5.7.15</a> - Released Mar 24, 2009</p>
+                      <table>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      MD5
+                                  </td>
+                                  <td>
+                                      263610204bd6dabf6d99feac9a71e5a9
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      SHA1
+                                  </td>
+                                  <td>
+                                      ee813eaa82e3c5d38398b10d4909a0eb5d7ab04a
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <h3>
+                          InstEd 1.5.6.14<br />
+                      </h3>
+                      <p>
+                          <a href="http://apps.instedit.com/releases2/InstEd-1.5.6.14.msi" onclick="javascript: pageTracker._trackPageview(&#39;/downloads/insted_1_5_6_14_apps_from_thankyou&#39;);">
+                              Download InstEd 1.5.6.14</a> - Released Mar 10, 2009</p>
+                      <table>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      MD5
+                                  </td>
+                                  <td>
+                                      5013c3ebf9ef4a7b6f4c0cc83a40cd94
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      SHA1
+                                  </td>
+                                  <td>
+                                      6003280803b958d4ce07f84fa4d6a74a495fd8cc
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <h3>
+                          InstEd 1.5.5.13<br />
+                      </h3>
+                      <p>
+                          <a href="/releases2/InstEd-1.5.5.13.msi" onclick="javascript: pageTracker._trackPageview(&#39;/downloads/insted_1_5_5_13_from_thankyou&#39;);">
+                              Download InstEd 1.5.5.13</a>
+<!--                          <a href="http://vcrxyq.blu.livefilestore.com/y1pNgUPOO-o-jSHezrIOFkjdvzDBNXOhukkpi6RdPfGMqbskdx6W6pZWxJDOtjc5yCFJGaY7LxgEPMTkZXfO72v5w/InstEd%20-%201.5.5.13.msi?download"
+                              onclick="javascript: pageTracker._trackPageview(&#39;/downloads/insted_1_5_5_13_live_from_thankyou&#39;);">
+                              Alternative Download</a> 
+-->                              - Released Jan 28, 2009</p>
+                      <table>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      MD5
+                                  </td>
+                                  <td>
+                                      4a1e34c3de74504417d70e525edbb27e
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      SHA1
+                                  </td>
+                                  <td>
+                                      4430671a077b51a066b475a00a7cf2bb336dad02
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <h3>
+                          InstEd 1.5.3.7
+                      </h3>
+                      <p>
+                          <a href="/releases2/InstEd-1.5.3.7.msi" onclick="javascript: pageTracker._trackPageview(&#39;/downloads/insted_1_5_3_7_from_thankyou&#39;);">
+                              Download InstEd 1.5.3.7</a></p>
+<!--                      <p>
+                          <a href="http://vcrxyq.blu.livefilestore.com/y1pTGmNTeIFxiVfYD184gtSkvzQPyK3h36m9r2j52U0csp3JC78oe64qJIbgXK-djMNuAa3KLk2O3hNNSPN_jpLzA/InstEd%20-%201.5.3.7.msi?download"
+                              onclick="javascript: pageTracker._trackPageview(&#39;/downloads/insted_1_5_3_7_live_from_thankyou&#39;);">
+                              Alternative download</a></p>-->
+                      <table>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      MD5
+                                  </td>
+                                  <td>
+                                      852daa83e2b52a296848caae8639ae9a
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      SHA1
+                                  </td>
+                                  <td>
+                                      97a8d524c35fcb6a38a0e3469dd3abee4956492e
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <p>
+                      </p>
+                      <script type="text/javascript">
+<!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//-->
+</script><script type="text/javascript">
+<!--
+var pageTracker = _gat._getTracker("UA-3527632-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+//-->
+</script><script language="JavaScript" type="text/javascript">
+<!--
+var google_conversion_id = 1044036638;
+var google_conversion_language = "en_AU";
+var google_conversion_format = "2";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "P6DaCJDbaxCe-OrxAw";
+if (0.0) {
+ var google_conversion_value = 0.0;
+}
+//-->
+</script>
+
+                      <script type="text/javascript" language="JavaScript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<!--                      <noscript class="noscript-show">
+                          <span class="noscript-show">
+                              <img style="display: none;" src="http://www.googleadservices.com/pagead/conversion/1044036638/?value=0.0&amp;label=P6DaCJDbaxCe-OrxAw&amp;guid=ON&amp;script=0"
+                                  width="1" border="0" height="1"></span></noscript>
+--></div></div>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <!-- /wrapper --><!-- /main-content -->
+      <div id="sidebar">
+        <div class="wrapper">
+            <div class="links">
+                <div class="wrapper">
+                    <div id='g_sidebar'>
+                        <li><a href="home.html">Home</a> </li>
+                        <li><a href="features.html">Features</a> </li>
+                        <li><a href="onlinehelp.html">Online Help</a> </li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <br />
+                        <!--<form target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="7JB6BLDYZCYG8">
+<input type="image" src="https://www.paypal.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+</form>-->
+                    </div>
+                </div>
+            <div style="clear: both"></div>
+          </div>
+    <!-- /wrapper --><!-- /links -->
+        </div>
+        
+      </div>
+      <!-- /wrapper --><!-- /sidebar -->
+      <div id="footer"><div class="wrapper">
+        <hr />
+        <p><div id='g_footer'>Copyright © 2017 instedit.com
+
+(TNE Enterprises)<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3527632-1");
+pageTracker._initData();
+pageTracker._setDomainName("none");
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+</script></div></p>
+        <div style="clear: both"></div>
+      </div></div>
+      <!-- /wrapper --><!-- /footer -->
+    </div>
+  </div>
+  <!-- /wrapper --><!-- /container -->
+
+<div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div>
+<div id="extraDiv3"><span></span></div><div id="extraDiv4"><span></span></div>
+<div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
+
+</body>
+</html>
